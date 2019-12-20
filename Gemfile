@@ -10,9 +10,9 @@ gem 'jemalloc'
 gem 'metriks', '0.9.9.6'
 gem 'metriks-librato_metrics', git: 'https://github.com/eric/metriks-librato_metrics'
 gem 'puma'
-gem 'rack-ssl', '~> 1.4'
+gem 'rack-ssl', '~> 1.4', '>= 1.4.1'
 gem 'sentry-raven'
-gem 'sinatra', '~> 1.4'
+gem 'sinatra', '~> 1.4', '>= 1.4.7'
 gem 'travis-support', git: 'https://github.com/travis-ci/travis-support'
 
 group :development do
@@ -25,5 +25,5 @@ group :test do
   gem 'pry'
   gem 'rspec', '~> 3.0'
   gem 'simplecov', require: false
-  gem 'sinatra-contrib'
+  gem 'sinatra-contrib', '>= 1.4.7'
 end
