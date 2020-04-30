@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby File.read(File.expand_path('../.ruby-version', __FILE__)).strip if ENV.key?('DYNO')
 
-gem 'activesupport', '~> 4.0'
+gem 'activesupport', '~> 4.2', '>= 4.2.8'
 gem 'addressable', '~> 2.3'
 gem 'jwt'
 gem 'coder'
@@ -20,10 +20,10 @@ group :development do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'codeclimate-test-reporter', '>= 1.0.3', require: nil
   gem 'mocha', '~> 0.10.0'
   gem 'pry'
   gem 'rspec', '~> 3.0'
-  gem 'simplecov', require: false
+  gem 'simplecov', '>= 0.12.0', require: false
   gem 'sinatra-contrib'
 end
