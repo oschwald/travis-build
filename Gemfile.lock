@@ -14,11 +14,10 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.7.1)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
+    activesupport (5.2.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
@@ -29,15 +28,17 @@ GEM
       simplecov
     coder (0.4.0)
     coderay (1.1.1)
+    concurrent-ruby (1.1.6)
     diff-lcs (1.2.5)
     docile (1.1.5)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
     hitimes (1.2.4)
-    i18n (0.7.0)
+    i18n (1.8.2)
+      concurrent-ruby (~> 1.0)
     jemalloc (1.0.1)
-    json (1.8.3)
+    json (2.3.0)
     jwt (1.5.6)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -49,7 +50,7 @@ GEM
       atomic (~> 1.0)
       avl_tree (~> 1.1.2)
       hitimes (~> 1.1)
-    minitest (5.9.1)
+    minitest (5.14.1)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
@@ -105,16 +106,16 @@ GEM
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
     slop (3.6.0)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.5)
-    tzinfo (1.2.2)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (~> 4.0)
+  activesupport (~> 5.2, >= 5.2.4.3)
   addressable (~> 2.3)
   codeclimate-test-reporter
   coder
@@ -135,4 +136,4 @@ DEPENDENCIES
   travis-support!
 
 BUNDLED WITH
-   1.13.6
+   1.17.3
